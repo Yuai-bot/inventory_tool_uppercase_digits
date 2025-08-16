@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>童裝網店貨品存貨管理工具</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Import Google Fonts (via fallback if unavailable) -->
+  <style>
+    /* Fallback font in case external fonts cannot be loaded */
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    body { font-family: 'Fredoka One', sans-serif; }
+  </style>
+</head>
+<body>
+  <!-- Main container -->
+  <div class="container">
+    <header>
+      <h1>童裝網店存貨管理</h1>
+      <p>點擊按鈕自動生成 8 位英數貨品編號</p>
+    </header>
+
+    <!-- Generate code section -->
+    <section class="generate-section">
+      <h2>生成貨品編號</h2>
+      <p>按下按鈕即可取得一組隨機8位英數編號。</p>
+      <button id="generate-btn" class="btn">生成編號</button>
+      <div class="code-display" id="code-display" title="點擊複製">
+        <!-- 生成的代碼將顯示在此 -->
+      </div>
+      <p id="copy-msg" class="copy-msg"></p>
+    </section>
+  </div>
+
+  <!-- Background image section -->
+  <div class="background-image"></div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
